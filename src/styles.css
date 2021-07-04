@@ -1,0 +1,99 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.main-block {
+  background-color: white;
+  border-radius: 4px;
+  border-color: lightgray;
+  border-style: solid;
+  border-width: medium;
+  height: 400px;
+  width: 800px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.left-block {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.right-block {
+  display: flex;
+  justify-content: flex-start;
+  perspective: 1000px;
+}
+
+.left-bottom {
+  display: flex;
+}
+
+.btn-submit {
+  background-color: orange;
+}
+.btn-submit:hover {
+  background-color: darkorange;
+}
+.c-number {
+  width: 250px;
+  text-align: center;
+}
+
+.animationNumber {
+  margin: 70px auto auto 15px;
+  text-align: left;
+}
+.animationName {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.expire {
+  text-align: right;
+  margin-right: 10px;
+}
+.card-picture {
+  border: solid;
+  border-radius: 5px;
+  width: 250px;
+  height: 180px;
+  margin: auto auto auto auto;
+  color: gray;
+  background-color: lightgray;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+
+  position: relative;
+}
+
+.card__inner-is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card__face--back {
+  transform: rotateY(180deg);
+}
+.barkod {
+  width: 250px;
+  height: 40px;
+  background-color: gray;
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: lightgray;
+}
