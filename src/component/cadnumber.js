@@ -17,7 +17,7 @@ function CardNumber({ onNumber, cardNumber }) {
   const placeHolder = `_ _ _ _    _ _ _ _    _ _ _ _    _ _ _ _`;
 
   return (
-    <div className="card-number">
+    <div>
       <p> Kart Numarası</p>
       <TextField
         size="small"

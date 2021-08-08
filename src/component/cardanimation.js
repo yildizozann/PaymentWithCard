@@ -31,7 +31,7 @@ function CardAnimation({
           <p className="animationNumber">{mask_number}</p>
           <p className="animationName">{nameText}</p>
           <p className="expire">
-            {month} {"/"} {year}
+            {month} {month || year ? "/" : null} {year}
           </p>
         </div>
 
